@@ -23,7 +23,7 @@ header {
     border: 1px solid #ddd;
     padding: 10px;
     margin: 10px;
-    display: inline-block;
+    display:grid;
     width: calc(33.33% - 20px);
     box-sizing: border-box;
 }
