@@ -78,3 +78,23 @@ form {
     color: black;
 
 }
+
+img {
+  max-width: 80%;
+  height: auto;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
+  opacity: 0.8;
+  filter: grayscale(30%);
+  transform: rotate(15deg);
+  transition: transform 0.3s ease-in-out;
+} 
+
+img:hover {
+  transform: scale(1.1) rotate(0deg);
+}
