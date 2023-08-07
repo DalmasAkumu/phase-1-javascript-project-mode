@@ -67,3 +67,14 @@ form {
     padding: 10px 10px;
     cursor: pointer;
   }
+
+.user {
+  background-color: gray;
+  padding: 10 px;
+  font-size: 18px;
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-weight: 200;
+    color: black;
+
+}

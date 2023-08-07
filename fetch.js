@@ -17,9 +17,41 @@ document.addEventListener('DOMContentLoaded', function(){
 
     //Fetch API for Website
     
-    fetch("https://open.fda.gov/apis/drug/label/how-to-use-the-endpoint/")
-    .then((resp) => resp.json())
-    .then((json) => console.log(json));
+    function fetchData(){
+        
+        fetch("https://reqres.in/api/users")
+    .then((resp) => {
+        //console.log(response);
+
+        //if (!response.ok){
+          //  throw new error ("Unsuccessful report")
+          //};
+        
+        return resp.json();
+    })
+    .then((data) => {
+        console.log(data.data);
+        const html = data.data.map(user =>{
+            return `
+            <div class= "user"> 
+            
+                <p> Name:${user.first_name}</p>
+                <p> Email:${user.email}</p>
+
+            </div>`;
+
+        }).join('')
+        console.log(html);
+        document.querySelector('#clients').insertAdjacentHTML("afterbegin", html);
+    })
+    .catch(error =>{
+        console.log(error);
+    });  
+
+    }
+    fetchData();
+
+    
 
 
 })
