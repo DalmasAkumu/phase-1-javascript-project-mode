@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const html = data.data.map(user =>{
             return `
             <div class= "user"> 
-            
+
                 <p> Name:${user.first_name}</p>
                 <p> Email:${user.email}</p>
 
@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
     }
     fetchData();
-
     
 
 
