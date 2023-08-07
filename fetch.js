@@ -8,13 +8,19 @@ document.addEventListener('DOMContentLoaded', function(){
 
     })
 
-    const btn = document.getElementById('cart');
+    const btn = document.getElementById('btnconvert');
     btn.addEventListener("click", function(){
         alert("clicked")
     })
 
-    //Fetch API for Website
+   
 
-    fetch("https://drug-info-and-price-history.p.rapidapi.com/1/druginfo?drug=advil")
-  .then((resp) => resp.json())
-  .then((json) => console.log(json));
+    //Fetch API for Website
+    
+    fetch("https://open.fda.gov/apis/drug/label/how-to-use-the-endpoint/")
+    .then((resp) => resp.json())
+    .then((json) => console.log(json));
+
+
+})
+ 
